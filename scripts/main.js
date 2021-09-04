@@ -1,5 +1,10 @@
-const myHeading = document.querySelector('h1');
-myHeading.textContent = 'Hello World!';
+let myImage = document.querySelector('img');
 
-const mySubHeading= document.querySelector('h2');
-mySubHeading.textContent = 'bye World!';
+myImage.onclick = function() {
+    let mySrc = myImage.getAttribute('src');
+    if(mySrc === 'images/firefox-icon.png') {
+      myImage.setAttribute('src','images/firefox2.png');
+    } else {
+      myImage.setAttribute('src','images/firefox-icon.png');
+    }
+}
